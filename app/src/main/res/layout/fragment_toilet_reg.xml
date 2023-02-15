@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9F4EC"
+    android:id="@+id/register_child_fragment"
+    tools:context=".ToiletRegFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/echo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_c2"
+                android:gravity="center"
+                android:text="주소"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/jalnan"/>
+
+            <EditText
+                android:id="@+id/toilet_address"
+                android:layout_width="189dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_c2"
+                android:fontFamily="@font/jalnan"
+                android:textColor="@color/white"
+                android:hint="  주소"
+                android:singleLine="true" />
+
+            <ImageButton
+                android:id="@+id/address_map"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_c2"
+                android:src="@drawable/map"
+                android:padding="0sp"
+                android:scaleType="fitCenter"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_c2"
+                android:gravity="center"
+                android:text="화장실명"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/jalnan"/>
+
+            <EditText
+                android:id="@+id/toilet_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_c2"
+                android:textColor="@color/white"
+                android:fontFamily="@font/jalnan"
+                android:hint="  화장실명" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_c2"
+                android:gravity="center"
+                android:text="개방시간"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/jalnan"/>
+
+            <EditText
+                android:id="@+id/toilet_time"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/round_c2"
+                android:hint="  개방시간"
+                android:fontFamily="@font/jalnan"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/add_toilet"
+            android:layout_width="280dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_c2"
+            android:drawableLeft="@drawable/addxml"
+            android:fontFamily="@font/jalnan"
+            android:paddingLeft="10dp"
+            android:text="등록"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</FrameLayout>

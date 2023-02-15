@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_child_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9F4EC"
+    tools:context=".CategoryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btn_trashcan"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_c"
+            android:padding="30sp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/trashcan"/>
+
+        <ImageButton
+            android:id="@+id/btn_toilet"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/round_c"
+            android:padding="30sp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/toilet"/>
+
+    </LinearLayout>
+</FrameLayout>
